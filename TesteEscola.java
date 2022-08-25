@@ -2,7 +2,7 @@ package aula2;
 
 public class TesteEscola {
 	public static void main(String[] args) { 
-		//criação dos cursos
+
 		Curso curso1 = new Curso(1, "Ciencia da computação", 8); 
 		Curso curso2 = new Curso(2, "Sistemas de informação", 8);
 		Curso curso3 = new Curso(3, "Redes de computadores", 5);
