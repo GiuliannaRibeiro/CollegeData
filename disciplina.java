@@ -10,15 +10,14 @@ public class disciplina {
 		this.codDisciplina = codDisciplina;
 		this.descDisciplina = descDisciplina;
 	}
-	 //construtor default.
+	//construtor default.
 	public disciplina() {
 	
 	}
 	
 	public void imprimeDisciplina() {
-		System.out.println("Código da disciplina: " + this.codDisciplina);
-		System.out.println("Descrição da disciplina: " + this.descDisciplina);
+		System.out.println("CÃ³digo da disciplina: " + this.codDisciplina);
+		System.out.println("DescriÃ§Ã£o da disciplina: " + this.descDisciplina);
 	
 	}
-	
 }
