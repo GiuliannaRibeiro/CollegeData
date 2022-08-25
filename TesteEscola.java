@@ -1,17 +1,16 @@
 package aula2;
 
 public class TesteEscola {
-	public static void main(String[] args) { //a função main executa o programa
-		//criação dos cursos
-		Curso curso1 = new Curso(1, "Ciencia da computação", 8); //declarei uma var chamda curso1 e crieu um curso com estes dados em parenteses
-		Curso curso2 = new Curso(2, "Sistemas de informação", 8);
+	public static void main(String[] args) { 
+		//criaÃ§Ã£o dos cursos
+		Curso curso1 = new Curso(1, "Ciencia da computaÃ§Ã£o", 8); 
+		Curso curso2 = new Curso(2, "Sistemas de informaÃ§Ã£o", 8);
 		Curso curso3 = new Curso(3, "Redes de computadores", 5);
 		Curso curso4 = new Curso(4, "ADS", 5);
-		Curso curso5 = new Curso(5, "Gestão de TI", 5);
-		//para criar objetos usa-se o operador "new"
+		Curso curso5 = new Curso(5, "GestÃ£o de TI", 5);
+		
 		
 		Curso[]tabCurso = new Curso[5]; 
-		//array com 5 posições (tamanho 5).
 		
 		tabCurso[0] = curso1;
 		tabCurso[1] = curso2;
@@ -31,45 +30,35 @@ public class TesteEscola {
 		tabProfessor[2] = prof3;
 		tabProfessor[3] = prof4;
 		
-		disciplina disc1 = new disciplina(100, "Estatística"); 
+		disciplina disc1 = new disciplina(100, "EstatÃ­stica"); 
 		disciplina disc2 = new disciplina(110, "Algoritmos");
 		disciplina disc3 = new disciplina(120, "Redes");
 		disciplina disc4 = new disciplina(130, "Algebra");
-		//1- criei a disciplinas
-		//disc1 é uma variavel
 		
-		disciplina[] tabDisciplina = new disciplina[4]; //array da disciplina
+		disciplina[] tabDisciplina = new disciplina[4]; 
 		
 		tabDisciplina[0] = disc1;
 		tabDisciplina[1] = disc2;
 		tabDisciplina[2] = disc3;
 		tabDisciplina[3] = disc4;
-		//2- e coloquei as diciplinas dentro do array
-		//até agora eu criei objetos e guardei os objetos em um array (cursos, professores, disciplinas)
 		
 		System.out.println("-------------------------");
 		System.out.println("Exibindo os dados dos cursos: ");
-		//código para imprimir os dados dos cursos, usando um comando de repetição(for):
 		for (int i=0; i < tabCurso.length; i++) { 
 			tabCurso[i].imprimeCurso();
-			//tabcurso = variavel que aponta pro array
 		}
 		
-		System.out.println("----------------------");
-		//codigo para exibir dados dos professores
+		System.out.println("-------------------------");
 		System.out.println("Exibindo dados dos professores: ");
 		for (int i=0; i < tabProfessor.length; i++) {
 			tabProfessor[i].imprimeProfessor();
 			System.out.println("******************");
 		}
-		System.out.println("----------------------");
+		System.out.println("-------------------------");
 		
 		System.out.println("Exibindo dados das discipinas: ");
 		for (int i=0; i < tabDisciplina.length; i++) {
 			tabDisciplina[i].imprimeDisciplina();
-		}
-			
-		
-		
+		}	
 	} 
 }
